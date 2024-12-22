@@ -1,0 +1,100 @@
+2024-12-22 09:22:00,142 - INFO - Logging setup complete.
+2024-12-22 09:22:05,810 - ERROR - Automation error: 'ResourceCollector' object has no attribute '_can_collect'
+2024-12-22 09:22:19,662 - INFO - Logging setup complete.
+2024-12-22 09:22:25,349 - ERROR - Automation error: 'ResourceCollector' object has no attribute '_can_collect'
+2024-12-22 09:22:39,513 - INFO - Logging setup complete.
+2024-12-22 09:22:46,982 - ERROR - Automation error: 'ResourceCollector' object has no attribute '_can_collect'
+2024-12-22 09:24:08,584 - INFO - Logging setup complete.
+2024-12-22 09:24:17,590 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:18,689 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:21,900 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:23,072 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:26,398 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:27,352 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:29,743 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:30,844 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:33,464 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:34,688 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:37,346 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:24:38,248 - ERROR - Error clicking train troops button: 
+2024-12-22 09:24:40,678 - INFO - Automation stopped by user
+2024-12-22 09:42:39,262 - INFO - Logging setup complete.
+2024-12-22 09:42:50,422 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:42:51,415 - ERROR - Error clicking train troops button: 
+2024-12-22 09:42:54,302 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:42:55,085 - ERROR - Error clicking train troops button: 
+2024-12-22 09:42:57,614 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:42:58,613 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:00,919 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:02,140 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:05,146 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:07,502 - ERROR - Error clicking train button: 'train_button'
+2024-12-22 09:43:10,137 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:10,961 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:13,737 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:14,765 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:17,691 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:18,599 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:20,973 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:22,089 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:24,582 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:25,775 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:28,728 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:29,546 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:32,015 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:34,649 - ERROR - Error clicking train button: 'train_button'
+2024-12-22 09:43:37,404 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:38,247 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:41,398 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:42,308 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:45,330 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:46,261 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:48,710 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:49,571 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:52,709 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:53,546 - ERROR - Error clicking train troops button: 
+2024-12-22 09:43:56,452 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:43:57,213 - ERROR - Error clicking train troops button: 
+2024-12-22 09:44:00,290 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:44:01,275 - ERROR - Error clicking train troops button: 
+2024-12-22 09:44:04,439 - ERROR - Error collecting dark_elixir: 
+2024-12-22 09:44:05,351 - ERROR - Error clicking train troops button: 
+2024-12-22 09:44:07,624 - INFO - Automation stopped by user
+2024-12-22 09:50:34,420 - INFO - Logging setup complete.
+2024-12-22 09:50:46,038 - ERROR - Error clicking training menu: Failed to read game_images/training/open_training_menu.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:50:49,626 - ERROR - Error clicking training menu: Failed to read game_images/training/open_training_menu.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:50:52,656 - INFO - Automation stopped by user
+2024-12-22 09:51:19,725 - INFO - Logging setup complete.
+2024-12-22 09:51:24,207 - ERROR - Error collecting gold: 
+2024-12-22 09:51:24,403 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:26,721 - ERROR - Error clicking train army button: Failed to read game_images/training/train_army_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:51:29,795 - ERROR - Error collecting gold: 
+2024-12-22 09:51:30,014 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:31,132 - ERROR - Error clicking training menu: 
+2024-12-22 09:51:33,612 - ERROR - Error collecting gold: 
+2024-12-22 09:51:33,833 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:36,332 - ERROR - Error clicking train army button: Failed to read game_images/training/train_army_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:51:38,884 - ERROR - Error collecting gold: 
+2024-12-22 09:51:39,114 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:41,235 - ERROR - Error clicking train army button: Failed to read game_images/training/train_army_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:51:43,781 - ERROR - Error collecting gold: 
+2024-12-22 09:51:44,002 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:46,165 - ERROR - Error clicking train army button: Failed to read game_images/training/train_army_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:51:48,398 - ERROR - Error collecting gold: 
+2024-12-22 09:51:48,625 - ERROR - Error collecting elixir: 
+2024-12-22 09:51:50,684 - ERROR - Error clicking train army button: Failed to read game_images/training/train_army_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 09:51:51,743 - INFO - Automation stopped by user
+2024-12-22 09:53:04,830 - INFO - Logging setup complete.
+2024-12-22 09:53:15,181 - ERROR - Error clicking train army button: 
+2024-12-22 09:53:18,195 - INFO - Automation stopped by user
+2024-12-22 09:55:13,000 - INFO - Logging setup complete.
+2024-12-22 09:55:23,999 - ERROR - Error clicking train army button: 
+2024-12-22 09:55:29,564 - ERROR - Error clicking train army button: 
+2024-12-22 09:55:34,066 - ERROR - Error clicking train army button: 
+2024-12-22 09:55:38,484 - ERROR - Error clicking train army button: 
+2024-12-22 09:55:39,077 - INFO - Automation stopped by user
+2024-12-22 10:00:00,667 - INFO - Logging setup complete.
+2024-12-22 10:00:18,943 - INFO - Trained 5 barbarian
+2024-12-22 10:00:28,686 - INFO - Trained 5 barbarian
+2024-12-22 10:00:35,545 - ERROR - Error clicking train army button: 
+2024-12-22 10:00:36,859 - INFO - Automation stopped by user

@@ -1,0 +1,297 @@
+2024-12-22 08:07:33,195 - Error collecting gold: Failed to read game_images/collectors/full_gold.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:33,272 - Error collecting elixir: Failed to read game_images/collectors/full_elixir.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:33,357 - Error collecting dark_elixir: Failed to read game_images/collectors/full_dark_elixir.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:35,121 - Error opening training menu: Failed to read game_images/training/train_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:39,678 - Error collecting gold: Failed to read game_images/collectors/full_gold.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:39,763 - Error collecting elixir: Failed to read game_images/collectors/full_elixir.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:39,852 - Error collecting dark_elixir: Failed to read game_images/collectors/full_dark_elixir.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:07:41,842 - Error opening training menu: Failed to read game_images/training/train_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:23:03,786 - Collected gold
+2024-12-22 08:23:07,408 - Collected elixir
+2024-12-22 08:23:09,081 - Error collecting dark_elixir: 
+2024-12-22 08:23:12,888 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:23:13,504 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:23:19,354 - Error collecting dark_elixir: 
+2024-12-22 08:23:23,431 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:23:24,134 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:32:47,704 - Collected gold
+2024-12-22 08:32:50,518 - Collected elixir
+2024-12-22 08:32:52,477 - Error collecting dark_elixir: 
+2024-12-22 08:32:54,255 - Error opening training menu: Failed to read game_images/training/train_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:32:58,950 - Error collecting dark_elixir: 
+2024-12-22 08:33:00,775 - Error opening training menu: Failed to read game_images/training/train_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:33:05,327 - Error collecting dark_elixir: 
+2024-12-22 08:40:08,862 - Collected gold
+2024-12-22 08:40:11,662 - Collected elixir
+2024-12-22 08:40:13,630 - Error collecting dark_elixir: 
+2024-12-22 08:40:15,126 - Error opening training menu: 
+2024-12-22 08:40:20,456 - Error collecting dark_elixir: 
+2024-12-22 08:40:24,914 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:25,549 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:31,309 - Error collecting dark_elixir: 
+2024-12-22 08:40:35,493 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:35,919 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:42,208 - Error collecting dark_elixir: 
+2024-12-22 08:40:45,868 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:46,449 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:53,538 - Error collecting dark_elixir: 
+2024-12-22 08:40:57,819 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:40:58,489 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:41:05,947 - Error collecting dark_elixir: 
+2024-12-22 08:41:10,227 - Error training barbarian: Failed to read game_images/training/troops/barbarian.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:41:10,912 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:50:57,473 - Collected gold
+2024-12-22 08:51:00,702 - Collected elixir
+2024-12-22 08:51:02,970 - Error collecting dark_elixir: 
+2024-12-22 08:51:05,248 - Error clicking main train button: 
+2024-12-22 08:51:09,889 - Error collecting dark_elixir: 
+2024-12-22 08:51:11,711 - Error clicking main train button: 
+2024-12-22 08:51:17,470 - Error collecting dark_elixir: 
+2024-12-22 08:51:19,327 - Error clicking main train button: 
+2024-12-22 08:51:24,816 - Error collecting dark_elixir: 
+2024-12-22 08:51:26,967 - Error clicking main train button: 
+2024-12-22 08:51:33,291 - Error collecting dark_elixir: 
+2024-12-22 08:51:35,442 - Error clicking main train button: 
+2024-12-22 08:51:41,558 - Error collecting dark_elixir: 
+2024-12-22 08:51:43,677 - Error clicking main train button: 
+2024-12-22 08:51:49,409 - Error collecting dark_elixir: 
+2024-12-22 08:51:51,343 - Error clicking main train button: 
+2024-12-22 08:51:56,826 - Error collecting dark_elixir: 
+2024-12-22 08:51:58,848 - Error clicking main train button: 
+2024-12-22 08:52:03,919 - Error collecting dark_elixir: 
+2024-12-22 08:52:06,167 - Error clicking main train button: 
+2024-12-22 08:52:11,169 - Error collecting dark_elixir: 
+2024-12-22 08:52:12,855 - Error clicking main train button: 
+2024-12-22 08:52:18,438 - Error collecting dark_elixir: 
+2024-12-22 08:52:20,151 - Error clicking main train button: 
+2024-12-22 08:52:25,384 - Error collecting dark_elixir: 
+2024-12-22 08:52:27,154 - Error clicking main train button: 
+2024-12-22 08:52:32,952 - Error collecting dark_elixir: 
+2024-12-22 08:52:34,553 - Error clicking main train button: 
+2024-12-22 08:52:39,756 - Error collecting dark_elixir: 
+2024-12-22 08:52:41,492 - Error clicking main train button: 
+2024-12-22 08:52:46,613 - Error collecting dark_elixir: 
+2024-12-22 08:53:05,563 - Starting resource collection cycle
+2024-12-22 08:53:07,103 - Collected gold
+2024-12-22 08:53:09,757 - Collected elixir
+2024-12-22 08:53:11,757 - Error collecting dark_elixir: 
+2024-12-22 08:53:13,093 - Starting troop training cycle
+2024-12-22 08:53:13,437 - Error clicking main train button: 
+2024-12-22 08:53:13,441 - Completed troop training cycle
+2024-12-22 08:53:13,442 - Waiting 5.1 seconds before next cycle
+2024-12-22 08:53:18,588 - Starting resource collection cycle
+2024-12-22 08:53:18,915 - Error collecting dark_elixir: 
+2024-12-22 08:53:20,663 - Starting troop training cycle
+2024-12-22 08:53:21,021 - Error clicking main train button: 
+2024-12-22 08:53:21,026 - Completed troop training cycle
+2024-12-22 08:53:21,026 - Waiting 5.5 seconds before next cycle
+2024-12-22 08:53:26,501 - Starting resource collection cycle
+2024-12-22 08:53:26,823 - Error collecting dark_elixir: 
+2024-12-22 08:53:27,856 - Starting troop training cycle
+2024-12-22 08:53:28,203 - Error clicking main train button: 
+2024-12-22 08:53:28,208 - Completed troop training cycle
+2024-12-22 08:53:28,208 - Waiting 5.7 seconds before next cycle
+2024-12-22 08:53:33,860 - Starting resource collection cycle
+2024-12-22 08:53:34,169 - Error collecting dark_elixir: 
+2024-12-22 08:53:35,320 - Starting troop training cycle
+2024-12-22 08:53:37,883 - Error clicking train troops button: Failed to read game_images/training/train_troops_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:53:37,886 - Completed troop training cycle
+2024-12-22 08:53:37,886 - Waiting 4.4 seconds before next cycle
+2024-12-22 08:53:42,260 - Starting resource collection cycle
+2024-12-22 08:53:42,567 - Error collecting dark_elixir: 
+2024-12-22 08:53:44,521 - Starting troop training cycle
+2024-12-22 08:53:46,709 - Error clicking train troops button: Failed to read game_images/training/train_troops_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:53:46,713 - Completed troop training cycle
+2024-12-22 08:53:46,714 - Waiting 5.4 seconds before next cycle
+2024-12-22 08:53:52,123 - Starting resource collection cycle
+2024-12-22 08:53:52,432 - Error collecting dark_elixir: 
+2024-12-22 08:53:54,149 - Starting troop training cycle
+2024-12-22 08:53:54,488 - Error clicking main train button: 
+2024-12-22 08:53:54,494 - Completed troop training cycle
+2024-12-22 08:53:54,494 - Waiting 4.7 seconds before next cycle
+2024-12-22 08:53:59,232 - Starting resource collection cycle
+2024-12-22 08:53:59,605 - Error collecting dark_elixir: 
+2024-12-22 08:54:01,569 - Starting troop training cycle
+2024-12-22 08:54:01,892 - Error clicking main train button: 
+2024-12-22 08:54:01,897 - Completed troop training cycle
+2024-12-22 08:54:01,897 - Waiting 5.5 seconds before next cycle
+2024-12-22 08:54:07,372 - Starting resource collection cycle
+2024-12-22 08:54:07,716 - Error collecting dark_elixir: 
+2024-12-22 08:54:09,013 - Starting troop training cycle
+2024-12-22 08:54:09,320 - Error clicking main train button: 
+2024-12-22 08:54:09,324 - Completed troop training cycle
+2024-12-22 08:54:09,325 - Waiting 5.7 seconds before next cycle
+2024-12-22 08:54:14,998 - Starting resource collection cycle
+2024-12-22 08:54:15,329 - Error collecting dark_elixir: 
+2024-12-22 08:54:16,442 - Starting troop training cycle
+2024-12-22 08:54:16,864 - Error clicking main train button: 
+2024-12-22 08:54:16,868 - Completed troop training cycle
+2024-12-22 08:54:16,869 - Waiting 4.7 seconds before next cycle
+2024-12-22 08:54:21,568 - Starting resource collection cycle
+2024-12-22 08:54:21,911 - Error collecting dark_elixir: 
+2024-12-22 08:54:23,663 - Starting troop training cycle
+2024-12-22 08:54:23,989 - Error clicking main train button: 
+2024-12-22 08:54:23,993 - Completed troop training cycle
+2024-12-22 08:54:23,993 - Waiting 5.4 seconds before next cycle
+2024-12-22 08:54:29,378 - Starting resource collection cycle
+2024-12-22 08:54:29,701 - Error collecting dark_elixir: 
+2024-12-22 08:54:31,400 - Starting troop training cycle
+2024-12-22 08:54:31,745 - Error clicking main train button: 
+2024-12-22 08:54:31,750 - Completed troop training cycle
+2024-12-22 08:54:31,751 - Waiting 5.2 seconds before next cycle
+2024-12-22 08:54:36,914 - Starting resource collection cycle
+2024-12-22 08:54:37,257 - Error collecting dark_elixir: 
+2024-12-22 08:54:38,766 - Starting troop training cycle
+2024-12-22 08:54:39,107 - Error clicking main train button: 
+2024-12-22 08:54:39,111 - Completed troop training cycle
+2024-12-22 08:54:39,111 - Waiting 4.6 seconds before next cycle
+2024-12-22 08:54:43,704 - Starting resource collection cycle
+2024-12-22 08:54:44,037 - Error collecting dark_elixir: 
+2024-12-22 08:54:45,857 - Starting troop training cycle
+2024-12-22 08:54:46,193 - Error clicking main train button: 
+2024-12-22 08:54:46,197 - Completed troop training cycle
+2024-12-22 08:54:46,197 - Waiting 4.1 seconds before next cycle
+2024-12-22 08:54:50,342 - Starting resource collection cycle
+2024-12-22 08:54:50,714 - Error collecting dark_elixir: 
+2024-12-22 08:54:52,016 - Starting troop training cycle
+2024-12-22 08:54:52,155 - Error clicking main train button: Failed to read game_images/training/main_train_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:54:52,156 - Completed troop training cycle
+2024-12-22 08:54:52,156 - Waiting 4.7 seconds before next cycle
+2024-12-22 08:54:56,838 - Starting resource collection cycle
+2024-12-22 08:54:57,162 - Error collecting dark_elixir: 
+2024-12-22 08:54:59,110 - Starting troop training cycle
+2024-12-22 08:54:59,416 - Error clicking main train button: 
+2024-12-22 08:54:59,419 - Completed troop training cycle
+2024-12-22 08:54:59,420 - Waiting 5.2 seconds before next cycle
+2024-12-22 08:55:04,650 - Starting resource collection cycle
+2024-12-22 08:55:04,959 - Error collecting dark_elixir: 
+2024-12-22 08:55:05,972 - Starting troop training cycle
+2024-12-22 08:55:06,253 - Error clicking main train button: 
+2024-12-22 08:55:06,257 - Completed troop training cycle
+2024-12-22 08:55:06,257 - Waiting 5.8 seconds before next cycle
+2024-12-22 08:55:12,081 - Starting resource collection cycle
+2024-12-22 08:55:12,398 - Error collecting dark_elixir: 
+2024-12-22 08:55:13,550 - Starting troop training cycle
+2024-12-22 08:55:13,888 - Error clicking main train button: 
+2024-12-22 08:55:13,893 - Completed troop training cycle
+2024-12-22 08:55:13,894 - Waiting 5.5 seconds before next cycle
+2024-12-22 08:55:19,437 - Starting resource collection cycle
+2024-12-22 08:55:19,749 - Error collecting dark_elixir: 
+2024-12-22 08:55:21,486 - Starting troop training cycle
+2024-12-22 08:55:21,835 - Error clicking main train button: 
+2024-12-22 08:55:21,838 - Completed troop training cycle
+2024-12-22 08:55:21,839 - Waiting 4.3 seconds before next cycle
+2024-12-22 08:55:26,187 - Starting resource collection cycle
+2024-12-22 08:55:26,554 - Error collecting dark_elixir: 
+2024-12-22 08:55:28,074 - Starting troop training cycle
+2024-12-22 08:55:28,425 - Error clicking main train button: 
+2024-12-22 08:55:28,429 - Completed troop training cycle
+2024-12-22 08:55:28,429 - Waiting 4.6 seconds before next cycle
+2024-12-22 08:55:32,996 - Starting resource collection cycle
+2024-12-22 08:55:33,356 - Error collecting dark_elixir: 
+2024-12-22 08:55:35,201 - Starting troop training cycle
+2024-12-22 08:55:35,536 - Error clicking main train button: 
+2024-12-22 08:55:35,539 - Completed troop training cycle
+2024-12-22 08:55:35,540 - Waiting 5.3 seconds before next cycle
+2024-12-22 08:55:40,826 - Starting resource collection cycle
+2024-12-22 08:55:41,151 - Error collecting dark_elixir: 
+2024-12-22 08:55:43,079 - Starting troop training cycle
+2024-12-22 08:55:43,392 - Error clicking main train button: 
+2024-12-22 08:55:43,397 - Completed troop training cycle
+2024-12-22 08:55:43,397 - Waiting 5.7 seconds before next cycle
+2024-12-22 08:55:49,092 - Starting resource collection cycle
+2024-12-22 08:55:49,409 - Error collecting dark_elixir: 
+2024-12-22 08:55:51,366 - Starting troop training cycle
+2024-12-22 08:55:51,689 - Error clicking main train button: 
+2024-12-22 08:55:51,693 - Completed troop training cycle
+2024-12-22 08:55:51,693 - Waiting 5.0 seconds before next cycle
+2024-12-22 08:55:56,671 - Starting resource collection cycle
+2024-12-22 08:55:56,977 - Error collecting dark_elixir: 
+2024-12-22 08:55:58,969 - Starting troop training cycle
+2024-12-22 08:55:59,335 - Error clicking main train button: 
+2024-12-22 08:55:59,339 - Completed troop training cycle
+2024-12-22 08:55:59,339 - Waiting 5.7 seconds before next cycle
+2024-12-22 08:56:02,022 - Automation stopped by user
+2024-12-22 08:56:15,573 - Starting resource collection cycle
+2024-12-22 08:56:17,065 - Collected gold
+2024-12-22 08:56:20,206 - Collected elixir
+2024-12-22 08:56:21,898 - Error collecting dark_elixir: 
+2024-12-22 08:56:23,131 - Starting troop training cycle
+2024-12-22 08:56:23,475 - Error clicking main train button: 
+2024-12-22 08:56:23,479 - Completed troop training cycle
+2024-12-22 08:56:23,479 - Waiting 4.6 seconds before next cycle
+2024-12-22 08:56:28,102 - Starting resource collection cycle
+2024-12-22 08:56:28,422 - Error collecting dark_elixir: 
+2024-12-22 08:56:29,577 - Starting troop training cycle
+2024-12-22 08:56:29,918 - Error clicking main train button: 
+2024-12-22 08:56:29,924 - Completed troop training cycle
+2024-12-22 08:56:29,925 - Waiting 5.5 seconds before next cycle
+2024-12-22 08:56:35,411 - Starting resource collection cycle
+2024-12-22 08:56:35,716 - Error collecting dark_elixir: 
+2024-12-22 08:56:36,733 - Starting troop training cycle
+2024-12-22 08:56:37,020 - Error clicking main train button: 
+2024-12-22 08:56:37,026 - Completed troop training cycle
+2024-12-22 08:56:37,026 - Waiting 5.3 seconds before next cycle
+2024-12-22 08:56:42,352 - Starting resource collection cycle
+2024-12-22 08:56:42,665 - Error collecting dark_elixir: 
+2024-12-22 08:56:43,919 - Starting troop training cycle
+2024-12-22 08:56:44,235 - Error clicking main train button: 
+2024-12-22 08:56:44,239 - Completed troop training cycle
+2024-12-22 08:56:44,241 - Waiting 5.9 seconds before next cycle
+2024-12-22 08:56:50,130 - Starting resource collection cycle
+2024-12-22 08:56:50,458 - Error collecting dark_elixir: 
+2024-12-22 08:56:52,288 - Starting troop training cycle
+2024-12-22 08:56:57,310 - Error training barbarian: 
+2024-12-22 08:56:57,871 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:56:58,763 - Error closing training menu: 
+2024-12-22 08:56:58,767 - Completed troop training cycle
+2024-12-22 08:56:58,767 - Waiting 4.5 seconds before next cycle
+2024-12-22 08:57:03,229 - Starting resource collection cycle
+2024-12-22 08:57:03,558 - Error collecting dark_elixir: 
+2024-12-22 08:57:05,340 - Starting troop training cycle
+2024-12-22 08:57:10,764 - Error training barbarian: 
+2024-12-22 08:57:11,300 - Error training archer: Failed to read game_images/training/troops/archer.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-22 08:57:12,023 - Error closing training menu: 
+2024-12-22 08:57:12,028 - Completed troop training cycle
+2024-12-22 08:57:12,029 - Waiting 4.4 seconds before next cycle
+2024-12-22 08:57:16,438 - Starting resource collection cycle
+2024-12-22 08:57:16,747 - Error collecting dark_elixir: 
+2024-12-22 08:57:18,582 - Starting troop training cycle
+2024-12-22 08:57:18,913 - Error clicking main train button: 
+2024-12-22 08:57:18,918 - Completed troop training cycle
+2024-12-22 08:57:18,919 - Waiting 4.4 seconds before next cycle
+2024-12-22 08:57:23,333 - Starting resource collection cycle
+2024-12-22 08:57:23,619 - Error collecting dark_elixir: 
+2024-12-22 08:57:25,274 - Starting troop training cycle
+2024-12-22 08:57:25,644 - Error clicking main train button: 
+2024-12-22 08:57:25,651 - Completed troop training cycle
+2024-12-22 08:57:25,651 - Waiting 5.5 seconds before next cycle
+2024-12-22 08:57:31,108 - Starting resource collection cycle
+2024-12-22 08:57:31,420 - Error collecting dark_elixir: 
+2024-12-22 08:57:31,760 - Automation stopped by user
+2024-12-22 08:58:33,107 - Starting resource collection cycle
+2024-12-22 08:58:34,773 - Collected gold
+2024-12-22 08:58:37,883 - Collected elixir
+2024-12-22 08:58:40,146 - Error collecting dark_elixir: 
+2024-12-22 08:58:41,996 - Starting troop training cycle
+2024-12-22 08:58:42,317 - Error clicking main train button: 
+2024-12-22 08:58:42,320 - Completed troop training cycle
+2024-12-22 08:58:42,321 - Waiting 5.6 seconds before next cycle
+2024-12-22 08:58:47,889 - Starting resource collection cycle
+2024-12-22 08:58:48,210 - Error collecting dark_elixir: 
+2024-12-22 08:58:49,460 - Starting troop training cycle
+2024-12-22 08:58:49,786 - Error clicking main train button: 
+2024-12-22 08:58:49,789 - Completed troop training cycle
+2024-12-22 08:58:49,789 - Waiting 4.5 seconds before next cycle
+2024-12-22 08:58:54,250 - Starting resource collection cycle
+2024-12-22 08:58:54,568 - Error collecting dark_elixir: 
+2024-12-22 08:58:56,529 - Starting troop training cycle
+2024-12-22 08:59:01,972 - Error training barbarian: 
+2024-12-22 08:59:02,415 - Error training archer: 'archer'
+2024-12-22 08:59:03,052 - Error closing training menu: 
+2024-12-22 08:59:03,058 - Completed troop training cycle
+2024-12-22 08:59:03,058 - Waiting 4.4 seconds before next cycle
+2024-12-22 08:59:07,417 - Starting resource collection cycle
+2024-12-22 08:59:07,799 - Error collecting dark_elixir: 
+2024-12-22 08:59:09,347 - Starting troop training cycle
+2024-12-22 08:59:16,009 - Automation stopped by user
