@@ -10,7 +10,7 @@ class MouseController:
         duration = random.uniform(0.3, 0.7)
         pyautogui.moveTo(x, y, duration=duration, tween=pyautogui.easeOutQuad)
         time.sleep(random.uniform(0.1, 0.3))
-    
+
     @staticmethod
     def human_click():
         pyautogui.click()
