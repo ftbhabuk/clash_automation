@@ -5,6 +5,7 @@ from src.resource_collector import ResourceCollector
 from src.troop_trainer import TroopTrainer
 from src.attack import Attacker
 
+
 def setup_logging():
     logging.basicConfig(
         filename='automation.log',
@@ -13,20 +14,27 @@ def setup_logging():
     )
     logging.info("Logging setup complete.")
 
+
 def main():
     print("🎮 Clash of Clans Automation Starting...")
     setup_logging()
 
     try:
-        collector = ResourceCollector()
-        trainer = TroopTrainer()
-        attacker = Attacker()
+        # collector = ResourceCollector()
+        # trainer = TroopTrainer()
 
-        loot_threshold = (200000, 200000, 2000)  # Adjust thresholds as needed
+        # Set loot thresholds (gold, elixir, dark elixir)
+        gold_threshold = 200  # Minimum gold required
+        elixir_threshold = 200  # Minimum elixir required
+        dark_elixir_threshold = 0  # Minimum dark elixir required
 
+        # Initialize attacker with thresholds
+        attacker = Attacker(gold_threshold, elixir_threshold, dark_elixir_threshold)
+
+        # Troop training configuration
         troops_to_train = [
-            ('barbarian', 30),
-            # ('archer', 3)
+            ('barbarian', 0),
+            # Add other troop configurations if needed
         ]
 
         print("\n⚠️ Make sure you have:")
@@ -41,18 +49,22 @@ def main():
             print(f"\n📍 Starting cycle #{cycle_count}")
 
             try:
-                collector.collect_resources()
-                time.sleep(random.uniform(0.5, 1.0))
+                # Resource collection
+                # collector.collect_resources()
+                # time.sleep(random.uniform(0.5, 1.0))
 
-                trainer.train_troops(troops_to_train)
+                # Train troops
+                # trainer.train_troops(troops_to_train)
+                # time.sleep(random.uniform(0.5, 1.0))
 
-                ####added place here??
+                # Attack sequence
                 try:
-                    attacker.find_and_attack(loot_threshold)
+                    attacker.find_and_attack()
                 except Exception as e:
                     print(f"❌ Error in attacking: {str(e)}")
                     logging.error(f"Error in attacking: {str(e)}")
 
+                # Wait before next cycle
                 wait_time = random.uniform(2.0, 3.0)
                 print(f"\n⏳ Waiting {wait_time:.1f} seconds before next cycle...")
                 time.sleep(wait_time)
@@ -71,6 +83,7 @@ def main():
     except Exception as e:
         print(f"\n❌ Error during automation: {str(e)}")
         logging.error(f"Automation error: {str(e)}")
+
 
 if __name__ == "__main__":
     main()
