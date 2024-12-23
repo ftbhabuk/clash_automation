@@ -15,11 +15,11 @@ IMAGE_PATHS = {
         }
     },
     'attack': {
-    'attack_button': 'game_images/attack/attack_button.png',
-    'start_attack': 'game_images/attack/start_attack.png',
-    'troop_deployment_area': 'game_images/attack/troop_deployment_area.png',
-    'next_button': 'game_images/attack/next_button.png'
-},
+        'attack_button': 'game_images/attack/attack_button.png',  # Home village attack button
+        'find_match': 'game_images/attack/find_match.png',  # Find a match button
+        'next_button': 'game_images/attack/next_button.png',  # Next button during scouting
+        'troop_deployment_area': 'game_images/attack/troop_deployment_area.png',  # Deployment area
+    },
 
     'upgrade': {
         'builder_icon': 'game_images/upgrade/builder_icon.png'

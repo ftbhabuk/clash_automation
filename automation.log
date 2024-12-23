@@ -522,3 +522,71 @@
 2024-12-23 19:06:06,939 - ERROR - Error reading loot amounts: C:\Program Files\Tesseract-OCR\tesseract.exe is not installed or it's not in your PATH. See README file for more information.
 2024-12-23 19:06:07,018 - ERROR - Error clicking Next button: Failed to read game_images/attack/next_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
 2024-12-23 19:06:08,180 - INFO - Automation stopped by user
+2024-12-23 20:00:37,578 - INFO - Logging setup complete.
+2024-12-23 20:00:50,560 - ERROR - Error checking queue status: 
+2024-12-23 20:00:51,999 - ERROR - Error checking queue status: 
+2024-12-23 20:00:52,668 - ERROR - Error checking queue status: 
+2024-12-23 20:00:53,313 - ERROR - Error checking queue status: 
+2024-12-23 20:00:54,059 - ERROR - Error checking queue status: 
+2024-12-23 20:00:54,741 - ERROR - Error checking queue status: 
+2024-12-23 20:00:55,482 - ERROR - Error checking queue status: 
+2024-12-23 20:00:56,175 - ERROR - Error checking queue status: 
+2024-12-23 20:00:56,923 - ERROR - Error checking queue status: 
+2024-12-23 20:00:57,732 - ERROR - Error checking queue status: 
+2024-12-23 20:00:58,429 - ERROR - Error checking queue status: 
+2024-12-23 20:00:58,527 - INFO - Automation stopped by user
+2024-12-23 20:05:21,449 - INFO - Logging setup complete.
+2024-12-23 20:05:35,793 - ERROR - Error checking queue status: 
+2024-12-23 20:05:37,356 - ERROR - Error checking queue status: 
+2024-12-23 20:05:38,047 - ERROR - Error checking queue status: 
+2024-12-23 20:05:38,840 - ERROR - Error checking queue status: 
+2024-12-23 20:05:39,593 - ERROR - Error checking queue status: 
+2024-12-23 20:05:40,320 - ERROR - Error checking queue status: 
+2024-12-23 20:05:40,959 - ERROR - Error checking queue status: 
+2024-12-23 20:05:41,646 - ERROR - Error checking queue status: 
+2024-12-23 20:05:42,309 - ERROR - Error checking queue status: 
+2024-12-23 20:05:43,109 - ERROR - Error checking queue status: 
+2024-12-23 20:05:43,758 - ERROR - Error checking queue status: 
+2024-12-23 20:05:44,353 - ERROR - Error checking queue status: 
+2024-12-23 20:05:45,002 - ERROR - Error checking queue status: 
+2024-12-23 20:05:45,784 - ERROR - Error checking queue status: 
+2024-12-23 20:05:46,552 - ERROR - Error checking queue status: 
+2024-12-23 20:05:47,315 - ERROR - Error checking queue status: 
+2024-12-23 20:05:48,090 - ERROR - Error checking queue status: 
+2024-12-23 20:05:48,764 - ERROR - Error checking queue status: 
+2024-12-23 20:05:49,411 - ERROR - Error checking queue status: 
+2024-12-23 20:05:50,137 - ERROR - Error checking queue status: 
+2024-12-23 20:05:50,841 - ERROR - Error checking queue status: 
+2024-12-23 20:05:51,561 - ERROR - Error checking queue status: 
+2024-12-23 20:05:52,301 - ERROR - Error checking queue status: 
+2024-12-23 20:05:52,909 - ERROR - Error checking queue status: 
+2024-12-23 20:05:53,615 - ERROR - Error checking queue status: 
+2024-12-23 20:05:54,265 - ERROR - Error checking queue status: 
+2024-12-23 20:05:54,981 - ERROR - Error checking queue status: 
+2024-12-23 20:05:55,714 - ERROR - Error checking queue status: 
+2024-12-23 20:05:56,460 - ERROR - Error checking queue status: 
+2024-12-23 20:05:57,135 - ERROR - Error checking queue status: 
+2024-12-23 20:05:57,836 - ERROR - Error checking queue status: 
+2024-12-23 20:05:59,859 - ERROR - Error clicking 'Attack' button: Failed to read game_images/attack/attack_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-23 20:05:59,861 - ERROR - Error clicking 'Find a Match' button: 'find_match'
+2024-12-23 20:05:59,861 - ERROR - Error in attacking: 'Attacker' object has no attribute '_get_loot_amounts'
+2024-12-23 20:06:04,828 - ERROR - Error clicking train army button: 
+2024-12-23 20:06:04,928 - ERROR - Error clicking 'Attack' button: Failed to read game_images/attack/attack_button.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2024-12-23 20:06:04,930 - ERROR - Error clicking 'Find a Match' button: 'find_match'
+2024-12-23 20:06:04,931 - ERROR - Error in attacking: 'Attacker' object has no attribute '_get_loot_amounts'
+2024-12-23 20:06:05,621 - INFO - Automation stopped by user
+2024-12-23 20:47:21,578 - INFO - Logging setup complete.
+2024-12-23 20:47:35,054 - ERROR - Error checking queue status: 
+2024-12-23 20:47:36,415 - ERROR - Error checking queue status: 
+2024-12-23 20:47:37,236 - ERROR - Error checking queue status: 
+2024-12-23 20:47:37,915 - ERROR - Error checking queue status: 
+2024-12-23 20:47:49,778 - ERROR - Error in attacking: 'Attacker' object has no attribute '_get_loot_amounts'
+2024-12-23 20:47:52,964 - ERROR - Error clicking training menu: 
+2024-12-23 20:47:53,302 - ERROR - Error clicking 'Attack' button: 
+2024-12-23 20:47:53,639 - ERROR - Error clicking 'Find a Match' button: 
+2024-12-23 20:47:53,643 - ERROR - Error in attacking: 'Attacker' object has no attribute '_get_loot_amounts'
+2024-12-23 20:47:56,940 - ERROR - Error clicking training menu: 
+2024-12-23 20:47:57,260 - ERROR - Error clicking 'Attack' button: 
+2024-12-23 20:47:57,581 - ERROR - Error clicking 'Find a Match' button: 
+2024-12-23 20:47:57,585 - ERROR - Error in attacking: 'Attacker' object has no attribute '_get_loot_amounts'
+2024-12-23 20:48:01,314 - INFO - Automation stopped by user
