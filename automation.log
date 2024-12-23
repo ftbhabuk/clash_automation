@@ -58,3 +58,7 @@
 2024-12-23 21:37:32,087 - ERROR - Error in attacking: Attack button not found!
 2024-12-23 21:37:34,845 - ERROR - Error in attacking: Attack button not found!
 2024-12-23 21:37:36,056 - INFO - Automation stopped by user
+2024-12-23 22:38:48,394 - INFO - Logging setup complete.
+2024-12-23 22:38:58,972 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-23 22:39:02,034 - ERROR - Error in attacking: Attack button not found!
+2024-12-23 22:39:03,810 - INFO - Automation stopped by user
