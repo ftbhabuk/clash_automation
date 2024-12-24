@@ -149,7 +149,7 @@ class Attacker:
             return
 
         # Get deployment points for mass deployment
-        num_points = min(len(deployment_points), 300)  # Increased number of points
+        num_points = min(len(deployment_points), 10)  # Increased number of points
         selected_points = random.sample(deployment_points, num_points)
 
         # Sort points from outside to inside
