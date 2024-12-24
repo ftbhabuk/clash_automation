@@ -1,6 +1,8 @@
 import logging
 import time
 import random
+from importlib.resources import Resource
+
 from src.resource_collector import ResourceCollector
 from src.troop_trainer import TroopTrainer
 from src.attack import Attacker
@@ -24,8 +26,8 @@ def main():
         # trainer = TroopTrainer()
 
         # Set loot thresholds (gold, elixir, dark elixir)
-        gold_threshold = 200  # Minimum gold required
-        elixir_threshold = 200  # Minimum elixir required
+        gold_threshold = 20  # Minimum gold required
+        elixir_threshold = 20  # Minimum elixir required
         dark_elixir_threshold = 0  # Minimum dark elixir required
 
         # Initialize attacker with thresholds
@@ -33,7 +35,7 @@ def main():
 
         # Troop training configuration
         troops_to_train = [
-            ('barbarian', 0),
+            ('barbarian', 5),
             # Add other troop configurations if needed
         ]
 
@@ -52,7 +54,7 @@ def main():
                 # Resource collection
                 # collector.collect_resources()
                 # time.sleep(random.uniform(0.5, 1.0))
-
+                #
                 # Train troops
                 # trainer.train_troops(troops_to_train)
                 # time.sleep(random.uniform(0.5, 1.0))
