@@ -94,3 +94,38 @@
 2024-12-24 07:51:24,276 - ERROR - Error in attacking: Attack button not found!
 2024-12-24 07:51:26,943 - ERROR - Error in attacking: Attack button not found!
 2024-12-24 07:51:28,385 - INFO - Automation stopped by user
+2024-12-24 07:54:27,927 - INFO - Logging setup complete.
+2024-12-24 07:54:36,849 - ERROR - Error in attacking: get_loot_amounts() missing 1 required positional argument: 'region'
+2024-12-24 07:54:39,323 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 07:54:40,993 - INFO - Automation stopped by user
+2024-12-24 07:56:06,976 - INFO - Logging setup complete.
+2024-12-24 07:56:17,466 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 07:56:19,942 - INFO - Automation stopped by user
+2024-12-24 08:03:56,254 - INFO - Logging setup complete.
+2024-12-24 08:04:20,715 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 08:04:21,981 - INFO - Automation stopped by user
+2024-12-24 08:10:26,792 - INFO - Logging setup complete.
+2024-12-24 08:10:59,060 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 08:11:01,546 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:11:02,237 - INFO - Automation stopped by user
+2024-12-24 08:15:56,825 - INFO - Logging setup complete.
+2024-12-24 08:16:09,158 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 08:16:12,138 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:16:13,992 - INFO - Automation stopped by user
+2024-12-24 08:19:09,125 - INFO - Logging setup complete.
+2024-12-24 08:19:13,605 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:19:24,644 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 08:19:27,223 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:19:27,699 - INFO - Automation stopped by user
+2024-12-24 08:21:08,947 - INFO - Logging setup complete.
+2024-12-24 08:21:18,691 - ERROR - Error in attacking: Failed to detect loot on base.
+2024-12-24 08:21:21,128 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:21:23,003 - INFO - Automation stopped by user
+2024-12-24 08:23:09,557 - INFO - Logging setup complete.
+2024-12-24 08:23:22,762 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:23:25,307 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:23:25,324 - INFO - Automation stopped by user
+2024-12-24 08:23:58,481 - INFO - Logging setup complete.
+2024-12-24 08:24:21,120 - ERROR - Error in attacking: Attack button not found!
+2024-12-24 08:24:25,461 - ERROR - Error in attacking: Find a Match button not found!
+2024-12-24 08:24:26,256 - INFO - Automation stopped by user

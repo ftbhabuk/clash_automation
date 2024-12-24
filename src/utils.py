@@ -37,19 +37,17 @@ import os
 def get_loot_amounts(debug_mode=True, debug_dir="debug_screenshots"):
     """
     Extract loot amounts from the screen using OCR.
-    Save screenshots of the region for debugging purposes if enabled.
-    :param debug_mode: Whether to save debug screenshots (default True).
-    :param debug_dir: Directory to save debug screenshots (default "debug_screenshots").
-    :return: Tuple (gold, elixir, dark_elixir) as integers or None if detection fails.
+    Returns tuple of (gold, elixir, dark_elixir) or None if detection fails.
     """
-    loot_region = (500, 400, 300, 150)  # Region covering loot display (adjust as needed)
+    # Adjust these coordinates based on your game window size
+    loot_region = (494, 385, 210, 145)  # Make this smaller to focus just on the loot area
 
     try:
         # Take a screenshot of the loot region
         screenshot = pag.screenshot(region=loot_region)
         screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
 
-        # Save the screenshot if debugging is enabled
+        # Save debug screenshot if enabled
         if debug_mode:
             os.makedirs(debug_dir, exist_ok=True)
             timestamp = time.strftime("%Y%m%d-%H%M%S")
@@ -57,23 +55,37 @@ def get_loot_amounts(debug_mode=True, debug_dir="debug_screenshots"):
             cv2.imwrite(debug_path, screenshot)
             print(f"📸 Debug screenshot saved: {debug_path}")
 
-        # Preprocess the image for OCR
+        # Image preprocessing for better OCR
         gray = cv2.cvtColor(screenshot, cv2.COLOR_BGR2GRAY)
-        _, binary = cv2.threshold(gray, 130, 255, cv2.THRESH_BINARY)
 
-        # Extract text with Tesseract OCR
-        text = pytesseract.image_to_string(binary, config='--psm 6')
-        print(f"OCR Text: {text}")
+        # Apply threshold with OTSU to handle varying brightness
+        _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 
-        # Parse loot amounts
-        lines = text.split('\n')
-        gold = int(lines[0].split()[1].replace(',', '')) if len(lines) > 0 else 0
-        elixir = int(lines[1].split()[1].replace(',', '')) if len(lines) > 1 else 0
-        dark_elixir = int(lines[2].split()[2].replace(',', '')) if len(lines) > 2 else 0
+        # Add some preprocessing to improve text detection
+        kernel = np.ones((2, 2), np.uint8)
+        binary = cv2.dilate(binary, kernel, iterations=1)
 
-        return gold, elixir, dark_elixir
+        # Configure Tesseract for digits only
+        custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789,'
+        text = pytesseract.image_to_string(binary, config=custom_config)
+
+        # Clean and parse the text
+        lines = [line.strip() for line in text.split('\n') if line.strip()]
+
+        # Extract numbers using regex
+        import re
+        numbers = [int(re.sub(r'[^0-9]', '', line)) for line in lines if re.search(r'\d', line)]
+
+        if len(numbers) >= 2:
+            gold = numbers[0]
+            elixir = numbers[1]
+            dark_elixir = numbers[2] if len(numbers) > 2 else 0
+
+            print(f"Detected loot - Gold: {gold}, Elixir: {elixir}, Dark Elixir: {dark_elixir}")
+            return gold, elixir, dark_elixir
+        else:
+            raise Exception(f"Could not parse numbers from text: {text}")
 
     except Exception as e:
         print(f"❌ Error parsing loot amounts: {str(e)}")
         return None
-
