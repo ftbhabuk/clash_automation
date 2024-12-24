@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4ced2df0-6584-4098-9478-9d4c11041517" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +37,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.attack.executor": "Run",
     "Python.config.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.sc_cord.executor": "Run",
     "Python.troop_trainer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ftrav/Desktop/clash_automation",
+    "last_opened_file_path": "C:/Users/ftrav/Desktop",
     "settings.editor.selected.configurable": "settings.qodana"
   }
 }]]></component>
