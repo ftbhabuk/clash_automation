@@ -17,7 +17,7 @@ class ResourceCollector:
         return (current_time - last_collected_time) >= cooldown
 
     def collect_resources(self):
-        print("\n🔍 Checking resources...")
+        print("\n Checking resources...")
         current_time = datetime.now().timestamp()
         collected_any = False
 
@@ -39,7 +39,7 @@ class ResourceCollector:
                         print(f"- No full {resource_type} collectors found")
                 except Exception as e:
                     logging.error(f"Error collecting {resource_type}: {str(e)}")
-                    print(f"❌ Error: {str(e)}")
+                    print(f" Error: {str(e)}")
                     continue
 
         if not collected_any:

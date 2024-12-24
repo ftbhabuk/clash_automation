@@ -19,6 +19,7 @@ IMAGE_PATHS = {
         'find_match': 'game_images/attack/find_match.png',  # Find a match button
         'next_button': 'game_images/attack/next_button.png',  # Next button during scouting
         'troop_deployment_area': 'game_images/attack/troop_deployment_area.png',  # Deployment area
+        'next_button': 'game_images/attack/return_home.png',
     },
 
     'upgrade': {

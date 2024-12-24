@@ -18,7 +18,7 @@ def locate_image_on_screen(image_path, confidence=0.8):
         location = pag.locateCenterOnScreen(image_path, confidence=confidence)
         return location
     except Exception as e:
-        print(f"❌ Error locating image {image_path}: {str(e)}")
+        print(f" Error locating image {image_path}: {str(e)}")
         return None
 
 def click_at(location):
@@ -82,17 +82,17 @@ def get_loot_amounts(debug_mode=True, debug_dir="debug_screenshots", max_retries
                 elixir = numbers[1]
                 dark_elixir = numbers[2] if len(numbers) > 2 else 0
 
-                print(f"✅ Detected loot - Gold: {gold}, Elixir: {elixir}, Dark Elixir: {dark_elixir}")
+                print(f" Detected loot - Gold: {gold}, Elixir: {elixir}, Dark Elixir: {dark_elixir}")
                 return gold, elixir, dark_elixir
             else:
                 raise ValueError(f"Could not parse numbers from text: {text}")
 
         except Exception as e:
             attempt += 1
-            print(f"❌ Error parsing loot amounts (Attempt {attempt}/{max_retries}): {str(e)}")
+            print(f" Error parsing loot amounts (Attempt {attempt}/{max_retries}): {str(e)}")
             if attempt < max_retries:
-                print(f"🔄 Retrying in {retry_delay} seconds...")
+                print(f" Retrying in {retry_delay} seconds...")
                 time.sleep(retry_delay)
             else:
-                print("❌ Max retries reached. Returning None.")
+                print(" Max retries reached. Returning None.")
                 return None
