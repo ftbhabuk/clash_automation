@@ -1,2 +1,7 @@
 debug_screenshots/
-**/debug_screenshots/
+
+
+
+.idea/workspace.xml
+
+automation.log

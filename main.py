@@ -71,7 +71,9 @@ def main():
         attacker = Attacker(gold_threshold, elixir_threshold, dark_elixir_threshold)
 
         troops_to_train = [
-            ('barbarian', 50),
+            ('giant', 15),
+            ('archer', 35),
+            ('barbarian', 10),
         ]
 
         print(f"\n{Fore.YELLOW}Make sure you have:{Style.RESET_ALL}")
