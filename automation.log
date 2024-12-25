@@ -1151,3 +1151,203 @@ INFO:root:Logging setup complete.
 2024-12-25 07:59:49,445
 2024-12-25 07:59:49,672
 2024-12-25 07:59:49,673
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+ERROR:root:Error collecting elixir: 
+INFO:root:Automation stopped by user (Q key)
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking train army button: 
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+ERROR:root:Error collecting elixir: 
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+ERROR:root:Error in cycle #1: OpenCV(4.10.0) C:\b\abs_daut97tdpo\croot\opencv-suite_1722029138522\work\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 0)
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+ERROR:root:Error in cycle #1: not enough values to unpack (expected 3, got 1)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #1: Attack button not found!
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=5, Elixir=22,563, Dark Elixir=0
+INFO:root:Skipping base...
+INFO:root:Search attempt 2/50
+INFO:root:Scouting base for loot...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting elixir: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=1,538, Elixir=1,025, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Automation stopped by user (Q key)
+ERROR:root:Error during attack cycle: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+ERROR:root:Error in cycle #1: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting gold: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=4,284, Elixir=2,806, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Waiting for battle to complete...
+INFO:root:Return home button found, battle has ended
+INFO:root:Looking for return home button...
+INFO:root:Clicked return home button
+INFO:root:Attack completed!
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=2, Elixir=46, Dark Elixir=110,216
+INFO:root:Skipping base...
+INFO:root:Search attempt 2/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=22,745, Elixir=325,952, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Waiting for battle to complete...
+INFO:root:Logging setup complete.
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #1: Attack button not found!
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Found: Gold=3,553, Elixir=412,855, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Waiting for battle to complete...
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: region argument must be a tuple of four ints
+ERROR:root:Error in cycle #1: region argument must be a tuple of four ints
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: region argument must be a tuple of four ints
+ERROR:root:Error in cycle #1: region argument must be a tuple of four ints
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+ERROR:root:Error in cycle #1: name 'get_absolute_path' is not defined
+ERROR:root:Error in cycle #1: name 'get_absolute_path' is not defined
+INFO:root:Logging setup complete.
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Logging setup complete.
+INFO:root:Automation stopped by user (Q key)

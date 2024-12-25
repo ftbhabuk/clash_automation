@@ -4,9 +4,10 @@ import logging
 import colorama
 from colorama import Fore, Style
 import keyboard
-from src.attack import Attacker  # Your attack module
+from src.attack import Attacker  # Attack module
 from src.resource_collector import ResourceCollector  # Resource collection module
 from src.troop_trainer import TroopTrainer  # Troop training module
+from src.upgrade_manager import main as manage_upgrades  # Import the upgrade manager
 
 # Global variable to track the automation state
 stop_automation = False
@@ -17,10 +18,11 @@ def setup_logging():
 
     class ColorFormatter(logging.Formatter):
         def format(self, record):
-            # Save the original log message
+            # Generate a timestamp dynamically if asctime is not pre-included
+            log_time = self.formatTime(record, "%Y-%m-%d %H:%M:%S")
             log_message = record.getMessage()
 
-            # Apply color only to the message part (not the timestamp)
+            # Apply color only to the message part
             if record.levelname == 'INFO':
                 log_message = f"{Fore.GREEN}{log_message}{Style.RESET_ALL}"
             elif record.levelname == 'WARNING':
@@ -28,26 +30,23 @@ def setup_logging():
             elif record.levelname == 'ERROR':
                 log_message = f"{Fore.RED}{log_message}{Style.RESET_ALL}"
 
-            # Format the full log entry with timestamp and level (using default timestamp)
-            formatted_message = f"{record.asctime} - {record.levelname} - {log_message}"
-            return formatted_message
+            return f"{log_time} - {record.levelname} - {log_message}"
 
-    # Add timestamp format to logging
+    # Add the formatter and ensure asctime is correctly set
     handler = logging.StreamHandler()
-    formatter = ColorFormatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
+    handler.setFormatter(ColorFormatter())
 
     logging.basicConfig(
         level=logging.INFO,
         handlers=[logging.FileHandler('automation.log', encoding='utf-8'), handler],
-        format='%(asctime)s'  # Add the asctime formatter here for proper timestamp handling
     )
     logging.info("Logging setup complete.")
 
 
+
 def stop_on_q_key(event):
     """
-    Callback function to stop automation when 'q' is pressed.
+    Stop the automation when 'q' is pressed.
     """
     global stop_automation
     if event.name == 'q':
@@ -62,8 +61,8 @@ def main():
     setup_logging()
 
     try:
-        collector = ResourceCollector()
-        trainer = TroopTrainer()
+        # collector = ResourceCollector()
+        # trainer = TroopTrainer()
 
         gold_threshold = 20
         elixir_threshold = 20
@@ -92,15 +91,19 @@ def main():
             print(f"\n{Fore.CYAN}Starting cycle #{cycle_count}{Style.RESET_ALL}")
             try:
                 # Collect resources
-                collector.collect_resources()
-                time.sleep(random.uniform(0.5, 1.0))
+                # collector.collect_resources()
+                # time.sleep(random.uniform(0.5, 1.0))
 
                 # Train troops
-                trainer.train_troops(troops_to_train)
-                time.sleep(random.uniform(0.5, 1.0))
+                # trainer.train_troops(troops_to_train)
+                # time.sleep(random.uniform(0.5, 1.0))
+
+                # Upgrade management
+                print(f"\n{Fore.BLUE}Checking for available upgrades...{Style.RESET_ALL}")
+                manage_upgrades()  # Call the upgrade manager
 
                 # Find and attack
-                attacker.find_and_attack()
+                # attacker.find_and_attack()
 
                 # Wait for a random delay between cycles
                 wait_time = random.uniform(2.0, 3.0)
@@ -126,4 +129,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
