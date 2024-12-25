@@ -1,130 +1,131 @@
-import os
-import numpy as np
-import pyautogui as pag
 import cv2
+import pyautogui as pag
 import pytesseract
-from datetime import datetime
-
-# Define the path for the builder icon
-IMAGE_PATHS = {
-    'upgrade': {
-        'builder_icon': 'game_images/upgrade/builder_icon.png'
-    }
-}
+import numpy as np
+import os
+import time
 
 
-def get_absolute_path(relative_path):
-    """Convert relative path to absolute path."""
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    return os.path.join(base_dir, relative_path)
-
-
-def save_debug_screenshot(image, region, name):
-    """Save a debug screenshot with region markers."""
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    debug_dir = "debug_screenshots"
+def save_debug_screenshot(image, region, debug_dir="debug_screenshots", attempt=0):
     os.makedirs(debug_dir, exist_ok=True)
-
-    debug_path = os.path.join(debug_dir, f"debug_{name}_{timestamp}.png")
-
-    # Add region information and boundary
-    height, width = image.shape if len(image.shape) == 2 else image.shape[:2]
-    cv2.rectangle(image, (0, 0), (width - 1, height - 1), (255, 255, 255), 1)
-    cv2.putText(image, f"Region: {region}", (5, height - 5),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 255, 255), 1)
-
+    timestamp = time.strftime("%Y%m%d-%H%M%S")
+    debug_path = os.path.join(debug_dir, f"builder_region_{timestamp}_attempt{attempt}.png")
     cv2.imwrite(debug_path, image)
-    print(f"Saved debug image at {debug_path}")
-    return debug_path
+    print(f"📸 Debug screenshot saved: {debug_path}")
+
+
+def enhance_contrast(image):
+    """Apply CLAHE (Contrast Limited Adaptive Histogram Equalization)"""
+    lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+    l, a, b = cv2.split(lab)
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    l = clahe.apply(l)
+    lab = cv2.merge((l, a, b))
+    return cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
 
 
 def preprocess_image(image):
-    """Preprocess image for better OCR of white text on dark background."""
+    """Enhanced preprocessing pipeline for better OCR results"""
+    # Resize image (upscale)
+    height, width = image.shape[:2]
+    image = cv2.resize(image, (width * 2, height * 2), interpolation=cv2.INTER_CUBIC)
+
+    # Enhance contrast
+    image = enhance_contrast(image)
+
     # Convert to grayscale
-    gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
-    gray = cv2.cvtColor(gray, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    # Invert image (since text is white on black)
-    gray = cv2.bitwise_not(gray)
+    # Apply bilateral filter to reduce noise while preserving edges
+    gray = cv2.bilateralFilter(gray, 9, 75, 75)
 
-    # Apply threshold to make text more clear
-    _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+    # Apply adaptive thresholding
+    binary = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY_INV, 11, 2)
 
-    # Remove noise
-    denoised = cv2.fastNlMeansDenoising(thresh)
-
-    # Dilate slightly to connect text components
+    # Remove small noise
     kernel = np.ones((2, 2), np.uint8)
-    processed = cv2.dilate(denoised, kernel, iterations=1)
+    binary = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)
 
-    return processed
+    # Dilate to make text more prominent
+    binary = cv2.dilate(binary, kernel, iterations=1)
+
+    return binary
 
 
-def get_available_builders():
-    """Get the number of available builders with precise region detection."""
-    try:
-        # Get builder icon path
-        builder_icon_path = get_absolute_path(IMAGE_PATHS['upgrade']['builder_icon'])
-        print(f"Looking for builder icon at: {builder_icon_path}")
+def parse_builder_text(text):
+    """Parse builder count from OCR text with improved error handling"""
+    # Clean the text
+    text = text.strip().replace(' ', '')
 
-        # Locate builder icon on screen
-        location = pag.locateOnScreen(builder_icon_path, confidence=0.8)
+    # Try different parsing strategies
+    if '/' in text:
+        parts = text.split('/')
+        if len(parts) == 2:
+            # Try to extract numbers, handling potential OCR mistakes
+            try:
+                available = int(''.join(c for c in parts[0] if c.isdigit()))
+                total = int(''.join(c for c in parts[1] if c.isdigit()))
+                if 0 <= available <= total and total > 0:
+                    return available, total
+            except ValueError:
+                pass
+    return None, None
 
-        if location:
-            print(f"Builder icon found at: {location}")
-            x, y, width, height = map(int, (location.left, location.top, location.width, location.height))
 
-            # Define a more precise region for the builder count
-            # The region should be just enough to capture "X/Y" format
-            builder_region = (
-                x + width,  # Start one icon width to the left
-                y,  # Same vertical position as icon
-                width,  # Region width same as icon width
-                height  # Same height as icon
-            )
+def get_available_builders(debug_mode=True, debug_dir="debug_screenshots", max_retries=3, retry_delay=1):
+    """Extract the number of available builders with improved accuracy"""
+    builder_region = (1264, 350, 65, 32)  # x, y, width, height
 
-            # Capture and process the region
+    results = []  # Store multiple readings for consistency check
+
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            # Take a screenshot
             screenshot = pag.screenshot(region=builder_region)
+            screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
+
+            if debug_mode:
+                save_debug_screenshot(screenshot, builder_region, debug_dir, attempt)
+
+            # Preprocess with enhanced pipeline
             processed_image = preprocess_image(screenshot)
 
-            # Save debug screenshot
-            save_debug_screenshot(processed_image, builder_region, "builder_count")
+            # Try multiple PSM modes for better accuracy
+            psm_modes = [6, 7, 8]  # Different page segmentation modes
 
-            # OCR configuration specifically for "X/Y" format
-            custom_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=0123456789/'
-            text = pytesseract.image_to_string(processed_image, config=custom_config).strip()
+            for psm in psm_modes:
+                custom_config = f'--oem 3 --psm {psm} -c tessedit_char_whitelist=0123456789/ -c tessedit_do_invert=0'
+                text = pytesseract.image_to_string(processed_image, config=custom_config).strip()
 
-            print(f"OCR Result: {text}")
+                available, total = parse_builder_text(text)
+                if available is not None and total is not None:
+                    results.append((available, total))
+                    print(f"Detected: {available}/{total} (PSM: {psm})")
 
-            # Parse X/Y format
-            if '/' in text:
-                parts = text.split('/')
-                if len(parts) == 2 and parts[0].isdigit():
-                    return int(parts[0])
+        except Exception as e:
+            print(f"Error in attempt {attempt + 1}: {str(e)}")
+        finally:
+            attempt += 1
+            if attempt < max_retries:
+                time.sleep(retry_delay)
 
-            print(f"Failed to parse builder count from text: {text}")
-            return 0
-        else:
-            print("Builder icon not found on screen")
-            return 0
+    # Return most common result or (0, 0) if no consistent reading
+    if results:
+        # Get the most frequent reading
+        from collections import Counter
+        most_common = Counter(results).most_common(1)[0][0]
+        return most_common
 
-    except Exception as e:
-        print(f"Error in get_available_builders: {str(e)}")
-        return 0
+    return 0, 0
 
 
 def main():
-    print("Starting Builder Availability Check...")
-
-    # Check if builder icon exists
-    builder_path = get_absolute_path(IMAGE_PATHS['upgrade']['builder_icon'])
-    if not os.path.exists(builder_path):
-        print(f"Error: Builder icon not found at {builder_path}")
-        return
-
-    # Get available builders
-    available = get_available_builders()
-    print(f"\nAvailable builders: {available}")
+    print("Starting Enhanced Builder Availability Detection...")
+    available_builders, total_builders = get_available_builders()
+    print(f"\nFinal Result - Available Builders: {available_builders}")
+    print(f"Final Result - Total Builders: {total_builders}")
 
 
 if __name__ == "__main__":
