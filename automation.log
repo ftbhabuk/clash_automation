@@ -651,3 +651,469 @@ INFO:root:Automation stopped by user (Q key)
 INFO:root:Automation stopped by user (Q key)
 ERROR:root:Error during attack cycle: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
 ERROR:root:Error in cycle #1: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting elixir: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=2,400, Elixir=1,546, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 300 points...
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Looking for return home button...
+INFO:root:Automation stopped by user (Q key)
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+INFO:root:Logging setup complete.
+ERROR:root:Error collecting elixir: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=10,085, Elixir=6,412, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Looking for return home button...
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error collecting elixir: 
+ERROR:root:Error clicking training menu: 
+INFO:root:Logging setup complete.
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=720, Elixir=788, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Looking for return home button...
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Logging setup complete.
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=1,302, Elixir=136, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Looking for return home button...
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #2: Attack button not found!
+ERROR:root:Error training barbarian: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=66, Elixir=1,002, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Looking for return home button...
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+INFO:root:Clicking 'Find a Match' button...
+INFO:root:Search attempt 1/50
+INFO:root:Scouting base for loot...
+INFO:root:Found: Gold=256, Elixir=20, Dark Elixir=0
+INFO:root:Suitable base found! Starting attack...
+INFO:root:Deploying troops...
+INFO:root:Analyzing base for deployment points...
+INFO:root:Debug images saved in debug_screenshots
+INFO:root:Starting rapid deployment at 10 points...
+INFO:root:Looking for return home button...
+WARNING:root:Return home button not found after maximum attempts
+INFO:root:Attack completed!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+ERROR:root:Error clicking training menu: 
+INFO:root:Automation stopped by user (Q key)
+INFO:root:Starting attack cycle...
+INFO:root:Clicking 'Attack' button...
+ERROR:root:Error during attack cycle: Attack button not found!
+ERROR:root:Error in cycle #4: Attack button not found!
+INFO:root:Logging setup complete.
+2024-12-24 21:55:13,687
+2024-12-24 21:55:19,514
+2024-12-24 21:55:19,799
+2024-12-24 21:55:20,995
+2024-12-24 21:55:21,973
+2024-12-24 21:55:21,974
+2024-12-24 21:55:22,308
+2024-12-24 21:55:22,308
+2024-12-24 22:01:18,890
+2024-12-24 22:01:55,159
+2024-12-24 22:01:55,159
+2024-12-24 22:01:57,475
+2024-12-24 22:02:00,388
+2024-12-24 22:02:00,389
+2024-12-24 22:02:01,402
+2024-12-24 22:02:01,403
+2024-12-24 22:02:01,403
+2024-12-24 22:02:01,403
+2024-12-24 22:02:02,767
+2024-12-24 22:02:02,775
+2024-12-24 22:02:14,829
+2024-12-24 22:02:29,104
+2024-12-24 22:02:29,104
+2024-12-24 22:02:32,811
+2024-12-24 22:02:33,616
+2024-12-24 22:02:33,617
+2024-12-24 22:02:34,142
+2024-12-24 22:02:34,142
+2024-12-24 22:02:40,218
+2024-12-24 22:02:40,895
+2024-12-24 22:02:40,896
+2024-12-24 22:02:41,453
+2024-12-24 22:02:41,453
+2024-12-24 22:02:47,431
+2024-12-24 22:02:48,401
+2024-12-24 22:02:48,401
+2024-12-24 22:02:48,813
+2024-12-24 22:02:48,814
+2024-12-24 22:02:54,967
+2024-12-24 22:02:55,487
+2024-12-24 22:02:55,488
+2024-12-24 22:02:55,931
+2024-12-24 22:02:55,931
+2024-12-24 22:03:03,798
+2024-12-24 22:03:04,661
+2024-12-24 22:03:04,662
+2024-12-24 22:03:07,440
+2024-12-24 22:04:03,952
+2024-12-24 22:04:37,734
+2024-12-24 22:04:37,734
+2024-12-24 22:04:39,818
+2024-12-24 22:04:42,254
+2024-12-24 22:04:42,254
+2024-12-24 22:04:42,663
+2024-12-24 22:04:42,663
+2024-12-24 22:04:42,663
+2024-12-24 22:04:42,663
+2024-12-24 22:04:43,379
+2024-12-24 22:04:43,385
+2024-12-24 22:04:55,261
+2024-12-24 22:05:08,472
+2024-12-24 22:05:08,472
+2024-12-24 22:05:11,782
+2024-12-24 22:05:12,771
+2024-12-24 22:05:12,771
+2024-12-24 22:05:13,044
+2024-12-24 22:05:13,044
+2024-12-24 22:05:18,915
+2024-12-24 22:05:19,881
+2024-12-24 22:05:19,882
+2024-12-24 22:05:20,149
+2024-12-24 22:05:20,150
+2024-12-24 22:05:37,974
+2024-12-24 22:05:37,974
+2024-12-24 22:05:38,258
+2024-12-24 22:05:38,259
+2024-12-24 22:07:27,687
+2024-12-24 22:09:34,294
+2024-12-24 22:09:34,295
+2024-12-24 22:09:36,300
+2024-12-24 22:09:39,107
+2024-12-24 22:09:39,107
+2024-12-24 22:09:39,548
+2024-12-24 22:09:39,548
+2024-12-24 22:09:39,548
+2024-12-24 22:09:39,548
+2024-12-24 22:09:40,253
+2024-12-24 22:09:40,261
+2024-12-24 22:09:52,165
+2024-12-24 22:10:04,962
+2024-12-24 22:10:04,963
+2024-12-24 22:10:08,785
+2024-12-24 22:10:09,377
+2024-12-24 22:10:09,377
+2024-12-24 22:10:09,641
+2024-12-24 22:10:09,641
+2024-12-24 22:10:15,569
+2024-12-24 22:10:16,384
+2024-12-24 22:10:16,385
+2024-12-24 22:10:16,699
+2024-12-24 22:10:16,699
+2024-12-24 22:10:22,877
+2024-12-24 22:10:23,392
+2024-12-24 22:10:23,393
+2024-12-24 22:10:23,642
+2024-12-24 22:10:23,642
+2024-12-24 22:10:41,744
+2024-12-24 22:10:41,745
+2024-12-24 22:10:43,716
+2024-12-24 22:10:46,368
+2024-12-24 22:10:46,368
+2024-12-24 22:10:46,824
+2024-12-24 22:10:46,825
+2024-12-24 22:10:46,825
+2024-12-24 22:10:46,825
+2024-12-24 22:10:47,457
+2024-12-24 22:10:47,461
+2024-12-24 22:10:59,247
+2024-12-24 22:11:14,674
+2024-12-24 22:11:14,675
+2024-12-24 22:11:18,608
+2024-12-24 22:11:19,165
+2024-12-24 22:11:19,165
+2024-12-24 22:11:19,703
+2024-12-24 22:11:19,704
+2024-12-24 22:11:26,238
+2024-12-24 22:11:26,783
+2024-12-24 22:11:26,785
+2024-12-24 22:11:27,361
+2024-12-24 22:11:27,361
+2024-12-24 22:11:35,388
+2024-12-24 22:11:36,383
+2024-12-24 22:11:36,384
+2024-12-24 22:11:37,414
+2024-12-24 22:11:37,415
+2024-12-24 22:11:43,785
+2024-12-24 22:11:44,445
+2024-12-24 22:11:44,445
+2024-12-24 22:11:45,009
+2024-12-24 22:11:45,011
+2024-12-24 22:11:51,433
+2024-12-24 22:11:52,193
+2024-12-24 22:11:52,193
+2024-12-24 22:11:52,693
+2024-12-24 22:11:52,693
+2024-12-24 22:11:59,646
+2024-12-24 22:12:00,377
+2024-12-24 22:12:00,377
+2024-12-24 22:12:01,075
+2024-12-24 22:12:01,076
+2024-12-24 22:12:07,517
+2024-12-24 22:12:08,116
+2024-12-24 22:12:08,116
+2024-12-24 22:12:08,692
+2024-12-24 22:12:08,692
+2024-12-24 22:12:39,032
+2024-12-24 22:12:59,550
+2024-12-24 22:12:59,550
+2024-12-24 22:13:01,779
+2024-12-24 22:13:04,558
+2024-12-24 22:13:04,558
+2024-12-24 22:13:21,884
+2024-12-24 22:13:21,884
+2024-12-24 22:13:21,884
+2024-12-24 22:13:21,884
+2024-12-24 22:13:22,601
+2024-12-24 22:13:22,606
+2024-12-24 22:13:29,379
+2024-12-24 22:13:40,363
+2024-12-24 22:13:52,805
+2024-12-24 22:13:52,806
+2024-12-25 06:46:45,790
+2024-12-25 06:47:06,946
+2024-12-25 06:47:06,947
+2024-12-25 06:47:08,869
+2024-12-25 06:47:11,587
+2024-12-25 06:47:11,588
+2024-12-25 06:47:12,083
+2024-12-25 06:47:12,083
+2024-12-25 06:47:12,083
+2024-12-25 06:47:12,083
+2024-12-25 06:47:12,596
+2024-12-25 06:47:12,599
+2024-12-25 06:47:29,560
+2024-12-25 06:47:41,939
+2024-12-25 06:47:41,940
+2024-12-25 06:47:44,986
+2024-12-25 06:47:45,783
+2024-12-25 06:47:45,783
+2024-12-25 06:47:46,014
+2024-12-25 06:47:46,014
+2024-12-25 06:47:51,835
+2024-12-25 06:47:52,600
+2024-12-25 06:47:52,601
+2024-12-25 06:47:52,836
+2024-12-25 06:47:52,836
+2024-12-25 06:47:58,755
+2024-12-25 06:47:59,666
+2024-12-25 06:47:59,666
+2024-12-25 06:47:59,928
+2024-12-25 06:47:59,928
+2024-12-25 06:48:02,570
+2024-12-25 06:55:53,992
+2024-12-25 06:56:22,424
+2024-12-25 06:56:22,425
+2024-12-25 06:56:24,523
+2024-12-25 06:56:27,167
+2024-12-25 06:56:27,168
+2024-12-25 06:56:27,722
+2024-12-25 06:56:27,722
+2024-12-25 06:56:27,722
+2024-12-25 06:56:27,722
+2024-12-25 06:56:28,397
+2024-12-25 06:56:28,402
+2024-12-25 06:56:45,424
+2024-12-25 06:57:27,111
+2024-12-25 06:57:27,111
+2024-12-25 06:57:28,091
+2024-12-25 06:57:30,092
+2024-12-25 07:13:08,895
+2024-12-25 07:13:35,343
+2024-12-25 07:13:35,345
+2024-12-25 07:13:37,555
+2024-12-25 07:13:40,257
+2024-12-25 07:13:40,259
+2024-12-25 07:13:40,766
+2024-12-25 07:13:40,767
+2024-12-25 07:13:40,767
+2024-12-25 07:13:40,767
+2024-12-25 07:13:41,506
+2024-12-25 07:13:41,516
+2024-12-25 07:13:59,158
+2024-12-25 07:15:20,491
+2024-12-25 07:15:20,492
+2024-12-25 07:15:21,463
+2024-12-25 07:15:23,464
+2024-12-25 07:21:58,162
+2024-12-25 07:22:02,496
+2024-12-25 07:22:17,618
+2024-12-25 07:22:17,619
+2024-12-25 07:22:19,985
+2024-12-25 07:22:22,807
+2024-12-25 07:22:22,808
+2024-12-25 07:22:23,420
+2024-12-25 07:22:23,421
+2024-12-25 07:22:23,422
+2024-12-25 07:22:23,422
+2024-12-25 07:22:24,173
+2024-12-25 07:22:24,179
+2024-12-25 07:22:41,787
+2024-12-25 07:23:51,750
+2024-12-25 07:23:51,750
+2024-12-25 07:23:52,608
+2024-12-25 07:23:54,610

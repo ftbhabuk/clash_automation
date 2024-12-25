@@ -149,7 +149,7 @@ class Attacker:
             return
 
         # Get deployment points for mass deployment
-        num_points = min(len(deployment_points), 10)  # Increased number of points
+        num_points = min(len(deployment_points), 10)
         selected_points = random.sample(deployment_points, num_points)
 
         # Sort points from outside to inside
@@ -161,22 +161,53 @@ class Attacker:
 
         # Select first troop
         keyboard.press_and_release('1')
-        time.sleep(0.1)  # Minimal wait for troop selection
+        time.sleep(0.1)
 
         # Rapid deployment
         for point in selected_points:
-            # Deploy multiple troops at each point rapidly
-            for _ in range(2):  # Increased troops per point
+            for _ in range(15):
                 pag.click(point[0], point[1])
-                time.sleep(0.05)  # Minimal delay between clicks
+                time.sleep(0.01)
 
-        # After deployment, look for and click return home button
+        # Wait for battle to complete
+        self._wait_for_battle_end()
         self._return_home()
+
+    def _wait_for_battle_end(self):
+        """Wait for the battle to end by looking for the end battle indicators."""
+        logging.info("Waiting for battle to complete...")
+        max_wait_time = 180  # Maximum wait time in seconds
+        check_interval = 10  # Time between checks in seconds
+        elapsed_time = 0
+
+        while elapsed_time < max_wait_time:
+            # Check for common end-battle indicators
+           # end_battle_button = locate_image_on_screen('game_images/attack/end_battle.png')
+            return_home_button = locate_image_on_screen('game_images/attack/return_home.png')
+
+            #if end_battle_button:
+             #   logging.info("End battle button found, clicking...")
+              #  click_at(end_battle_button)
+               # time.sleep(2)  # Wait for end battle animation
+               # return True
+            if return_home_button:
+                logging.info("Return home button found, battle has ended")
+                return True
+
+            # Optional: Add check for battle percentage or stars
+            # battle_stats = locate_image_on_screen('game_images/attack/battle_stats.png')
+
+            time.sleep(check_interval)
+            elapsed_time += check_interval
+            logging.debug(f"Waiting for battle to end... {elapsed_time}s elapsed")
+
+        logging.warning("Battle didn't end within expected time")
+        return False
 
     def _return_home(self):
         """Click the return home button after attack."""
         logging.info("Looking for return home button...")
-        max_attempts = 10
+        max_attempts = 15  # Increased attempts
         attempts = 0
 
         while attempts < max_attempts:
@@ -184,11 +215,11 @@ class Attacker:
             if return_home_button:
                 click_at(return_home_button)
                 logging.info("Clicked return home button")
-                time.sleep(1.0)  # Wait for transition
+                time.sleep(2.0)  # Increased wait time for transition
                 return True
 
             attempts += 1
-            time.sleep(1.0)  # Wait between checks
+            time.sleep(2.0)  # Increased wait between checks
 
         logging.warning("Return home button not found after maximum attempts")
         return False
