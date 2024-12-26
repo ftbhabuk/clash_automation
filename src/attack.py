@@ -76,12 +76,15 @@ class BoundaryDetector:
 
 class Attacker:
     def __init__(self, gold_threshold=100000, elixir_threshold=100000,
-                 dark_elixir_threshold=1000, debug_dir="debug_screenshots"):
+                 dark_elixir_threshold=1000, debug_dir="debug_screenshots", troops_to_train=None):
         self.gold_threshold = gold_threshold
         self.elixir_threshold = elixir_threshold
         self.dark_elixir_threshold = dark_elixir_threshold
         self.debug_dir = debug_dir
         self.boundary_detector = BoundaryDetector()
+        self.troops_to_deploy = []
+        if troops_to_train:
+            self.set_troops(troops_to_train)
         os.makedirs(self.debug_dir, exist_ok=True)
 
     def _click_attack_button(self):
@@ -140,62 +143,17 @@ class Attacker:
         logging.info(f"Debug images saved in {self.debug_dir}")
         return deployment_points
 
-    def _deploy_troops(self):
-        logging.info("Deploying troops...")
-        deployment_points = self._detect_deployment_points()
-
-        if not deployment_points:
-            logging.warning("No deployment points detected!")
-            return
-
-        # Get deployment points for mass deployment
-        num_points = min(len(deployment_points), 10)
-        selected_points = random.sample(deployment_points, num_points)
-
-        # Sort points from outside to inside
-        center_x = sum(p[0] for p in selected_points) / len(selected_points)
-        center_y = sum(p[1] for p in selected_points) / len(selected_points)
-        selected_points.sort(key=lambda p: -((p[0] - center_x) ** 2 + (p[1] - center_y) ** 2))
-
-        logging.info(f"Starting rapid deployment at {num_points} points...")
-
-        # Select first troop
-        keyboard.press_and_release('1')
-        time.sleep(0.1)
-
-        # Rapid deployment
-        for point in selected_points:
-            for _ in range(15):
-                pag.click(point[0], point[1])
-                time.sleep(0.01)
-
-        # Wait for battle to complete
-        self._wait_for_battle_end()
-        self._return_home()
-
     def _wait_for_battle_end(self):
-        """Wait for the battle to end by looking for the end battle indicators."""
         logging.info("Waiting for battle to complete...")
-        max_wait_time = 180  # Maximum wait time in seconds
-        check_interval = 10  # Time between checks in seconds
+        max_wait_time = 180
+        check_interval = 10
         elapsed_time = 0
 
         while elapsed_time < max_wait_time:
-            # Check for common end-battle indicators
-           # end_battle_button = locate_image_on_screen('game_images/attack/end_battle.png')
             return_home_button = locate_image_on_screen('game_images/attack/return_home.png')
-
-            #if end_battle_button:
-             #   logging.info("End battle button found, clicking...")
-              #  click_at(end_battle_button)
-               # time.sleep(2)  # Wait for end battle animation
-               # return True
             if return_home_button:
                 logging.info("Return home button found, battle has ended")
                 return True
-
-            # Optional: Add check for battle percentage or stars
-            # battle_stats = locate_image_on_screen('game_images/attack/battle_stats.png')
 
             time.sleep(check_interval)
             elapsed_time += check_interval
@@ -205,9 +163,8 @@ class Attacker:
         return False
 
     def _return_home(self):
-        """Click the return home button after attack."""
         logging.info("Looking for return home button...")
-        max_attempts = 15  # Increased attempts
+        max_attempts = 15
         attempts = 0
 
         while attempts < max_attempts:
@@ -215,14 +172,98 @@ class Attacker:
             if return_home_button:
                 click_at(return_home_button)
                 logging.info("Clicked return home button")
-                time.sleep(2.0)  # Increased wait time for transition
+                time.sleep(2.0)
                 return True
 
             attempts += 1
-            time.sleep(2.0)  # Increased wait between checks
+            time.sleep(2.0)
 
         logging.warning("Return home button not found after maximum attempts")
         return False
+
+    def set_troops(self, troops_to_train):
+        """
+        Set the troops configuration based on troops_to_train list
+        """
+        self.troops_to_deploy = []
+        for idx, (troop_name, troop_count) in enumerate(troops_to_train, start=1):
+            self.troops_to_deploy.append({
+                'key': str(idx),
+                'name': troop_name,
+                'count': troop_count,
+                'deploy_delay': 0.01
+            })
+        logging.info(f"Troop configuration set: {self.troops_to_deploy}")
+
+    def _deploy_troops(self):
+        logging.info("Starting troop deployment...")
+
+        if not self.troops_to_deploy:
+            logging.warning("No troops configured for deployment!")
+            return
+
+        deployment_points = self._detect_deployment_points()
+        if not deployment_points:
+            logging.warning("No deployment points detected!")
+            return
+
+        # Get deployment points for mass deployment
+        num_points = min(len(deployment_points), 30)
+        selected_points = random.sample(deployment_points, num_points)
+
+        # Sort points from outside to inside
+        center_x = sum(p[0] for p in selected_points) / len(selected_points)
+        center_y = sum(p[1] for p in selected_points) / len(selected_points)
+        selected_points.sort(key=lambda p: -((p[0] - center_x) ** 2 + (p[1] - center_y) ** 2))
+
+        # Deploy each type of troop
+        for troop in self.troops_to_deploy:
+            logging.info(f"Selecting {troop['name']} (key {troop['key']})")
+
+            # Select troop type using keyboard
+            keyboard.press_and_release(troop['key'])
+            time.sleep(0.4)  # Ensure troop selection registers
+
+            # Calculate extra clicks to account for possible deployment failures
+            extra_clicks_factor = 3.3  # Add 30% more clicks was 1.3
+            total_deployment_attempts = int(troop['count'] * extra_clicks_factor)
+
+            troops_per_point = max(1, total_deployment_attempts // len(selected_points))
+            remaining_attempts = total_deployment_attempts
+
+            logging.info(
+                f"Deploying {troop['count']} {troop['name']}(s) with {int(total_deployment_attempts - troop['count'])} extra attempts for reliability")
+
+            # Main deployment loop
+            deployment_cycles = 0
+            max_cycles = 5  # Maximum number of full cycles through points
+
+            while remaining_attempts > 0 and deployment_cycles < max_cycles:
+                deployment_cycles += 1
+
+                for point in selected_points:
+                    if remaining_attempts <= 0:
+                        break
+
+                    clicks_at_this_point = min(troops_per_point, remaining_attempts)
+                    logging.debug(
+                        f"Cycle {deployment_cycles}: Deploying at point {point}, attempts: {clicks_at_this_point}")
+
+                    for _ in range(clicks_at_this_point):
+                        pag.click(point[0], point[1])
+                        time.sleep(troop['deploy_delay'])
+                        remaining_attempts -= 1
+
+                # Slightly adjust timing between cycles
+                time.sleep(0.1)
+
+            # Longer pause between different troop types
+            time.sleep(0.2)
+
+        logging.info("Troop deployment completed")
+        self._wait_for_battle_end()
+        self._return_home()
+
     def find_and_attack(self, max_searches=50):
         logging.info("Starting attack cycle...")
         try:

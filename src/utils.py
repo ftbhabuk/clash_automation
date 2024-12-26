@@ -33,7 +33,7 @@ def click_at(location):
 
 import os
 
-def get_loot_amounts(debug_mode=True, debug_dir="debug_screenshots", max_retries=15, retry_delay=3):
+def get_loot_amounts(debug_mode=True, debug_dir="debug_screenshots", max_retries=5, retry_delay=3):
     """
     Extract loot amounts from the screen using OCR, with retries.
     Returns tuple of (gold, elixir, dark_elixir) or None if detection fails after retries.

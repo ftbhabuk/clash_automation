@@ -1,4 +1,3 @@
-
 # Define image paths and cooldowns
 IMAGE_PATHS = {
     'collectors': {
@@ -30,10 +29,10 @@ IMAGE_PATHS = {
     'upgrade': {
         'builder_icon': 'game_images/upgrade/builder_icon.png'
     },
-'resources': {
-    'gold': 'game_images/resources/gold_icon.png',
-    'elixir': 'game_images/resources/elixir_icon.png',
-}
+    'resources': {
+        'gold': 'game_images/resources/gold_icon.png',
+        'elixir': 'game_images/resources/elixir_icon.png',
+    }
 
 }
 

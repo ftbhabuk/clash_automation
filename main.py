@@ -61,19 +61,27 @@ def main():
     setup_logging()
 
     try:
-        # collector = ResourceCollector()
-        # trainer = TroopTrainer()
+        collector = ResourceCollector()
+        trainer = TroopTrainer()
+
+        # Define troops configuration
+        troops_to_train = [
+            ('goblin', 70),
+            # ('barbarian', 10),  # Will use key '1'
+            # ('archer', 35),     # Will use key '2'
+            # ('giant', 5),      # Will use key '3'
+        ]
 
         gold_threshold = 20
         elixir_threshold = 20
         dark_elixir_threshold = 0
-        attacker = Attacker(gold_threshold, elixir_threshold, dark_elixir_threshold)
-
-        troops_to_train = [
-            ('giant', 15),
-            ('archer', 35),
-            ('barbarian', 10),
-        ]
+        # Pass troops_to_train during initialization
+        attacker = Attacker(
+            gold_threshold=gold_threshold,
+            elixir_threshold=elixir_threshold,
+            dark_elixir_threshold=dark_elixir_threshold,
+            troops_to_train=troops_to_train
+        )
 
         print(f"\n{Fore.YELLOW}Make sure you have:{Style.RESET_ALL}")
         print(f"{Fore.YELLOW}1. Game window open and visible{Style.RESET_ALL}")
@@ -83,7 +91,6 @@ def main():
         input(f"\nPress Enter to start (then quickly click game window)...")
         time.sleep(3)
 
-        # Hook the keyboard listener for the 'q' key
         keyboard.on_press(stop_on_q_key)
 
         cycle_count = 1
@@ -91,21 +98,16 @@ def main():
             print(f"\n{Fore.CYAN}Starting cycle #{cycle_count}{Style.RESET_ALL}")
             try:
                 # Collect resources
-                # collector.collect_resources()
-                # time.sleep(random.uniform(0.5, 1.0))
+                collector.collect_resources()
+                time.sleep(random.uniform(0.5, 1.0))
 
                 # Train troops
                 # trainer.train_troops(troops_to_train)
                 # time.sleep(random.uniform(0.5, 1.0))
 
-                # Upgrade management
-                print(f"\n{Fore.BLUE}Checking for available upgrades...{Style.RESET_ALL}")
-                manage_upgrades()  # Call the upgrade manager
+                # Find and attack - no longer needs troops_to_train parameter
+                attacker.find_and_attack()
 
-                # Find and attack
-                # attacker.find_and_attack()
-
-                # Wait for a random delay between cycles
                 wait_time = random.uniform(2.0, 3.0)
                 print(f"\n{Fore.MAGENTA}Waiting {wait_time:.1f} seconds before next cycle...{Style.RESET_ALL}")
                 time.sleep(wait_time)
@@ -122,7 +124,6 @@ def main():
         logging.error(f"Automation error: {str(e)}")
 
     finally:
-        # Unhook the keyboard listener
         keyboard.unhook_all()
         print(f"{Fore.GREEN}Automation has been stopped.{Style.RESET_ALL}")
 
