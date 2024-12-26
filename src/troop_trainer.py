@@ -36,6 +36,38 @@ class TroopTrainer:
             print(f"Error: {str(e)}")
             return False
 
+    def quick_train(self):
+        """
+        Performs quick train operation using the first preset army
+        """
+        print("\nAttempting quick train...")
+        try:
+            # Step 1: Open training menu first
+            if not self._click_training_button('open_training_menu', "training menu"):
+                return False
+            time.sleep(random.uniform(0.5, 1.0))
+
+            # Step 2: Click quick train button
+            if not self._click_training_button('quick_train_button', "quick train button"):
+                return False
+            time.sleep(random.uniform(0.5, 1.0))
+
+            # Step 3: Click the first quick train army slot
+            if not self._click_training_button('quick_train_army1', "quick train army slot"):
+                return False
+            time.sleep(random.uniform(0.5, 1.0))
+
+            # Step 4: Close the training menu (optional - game might do this automatically)
+            self._click_training_button('close_training_menu', "close button")
+
+            print("✓ Quick train completed successfully")
+            return True
+
+        except Exception as e:
+            logging.error(f"Error in quick_train: {str(e)}")
+            print(f"Error: {str(e)}")
+            return False
+
     def _click_training_button(self, button_key, description):
         try:
             location = pyautogui.locateOnScreen(

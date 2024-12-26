@@ -102,11 +102,14 @@ def main():
                 time.sleep(random.uniform(0.5, 1.0))
 
                 # Train troops
-                # trainer.train_troops(troops_to_train)
-                # time.sleep(random.uniform(0.5, 1.0))
+                trainer.train_troops(troops_to_train)
+                time.sleep(random.uniform(0.5, 1.0))
 
                 # Find and attack - no longer needs troops_to_train parameter
                 attacker.find_and_attack()
+
+                # Quick train troops after attack
+                trainer.quick_train()
 
                 wait_time = random.uniform(2.0, 3.0)
                 print(f"\n{Fore.MAGENTA}Waiting {wait_time:.1f} seconds before next cycle...{Style.RESET_ALL}")

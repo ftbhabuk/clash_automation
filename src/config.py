@@ -10,6 +10,8 @@ IMAGE_PATHS = {
         'train_army_button': 'game_images/training/train_army_button.png',  # Step 2
         'close_training_menu': 'game_images/training/close_button.png',  # Close
         'queue_full_message': 'game_images/training/queue_full.png',
+        'quick_train_button': 'game_images/training/quick_train.png',
+        'quick_train_army1': 'game_images/training/quick_train_army1.png',
         'troops': {
             'barbarian': 'game_images/training/troops/barbarian.png',
             'archer': 'game_images/training/troops/archer.png',
