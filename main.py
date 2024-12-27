@@ -98,12 +98,12 @@ def main():
             print(f"\n{Fore.CYAN}Starting cycle #{cycle_count}{Style.RESET_ALL}")
             try:
                 # Collect resources
-                collector.collect_resources()
-                time.sleep(random.uniform(0.5, 1.0))
+                # collector.collect_resources()
+                # time.sleep(random.uniform(0.5, 1.0))
 
                 # Train troops
-                trainer.train_troops(troops_to_train)
-                time.sleep(random.uniform(0.5, 1.0))
+                # trainer.train_troops(troops_to_train)
+                # time.sleep(random.uniform(0.5, 1.0))
 
                 # Find and attack - no longer needs troops_to_train parameter
                 attacker.find_and_attack()
