@@ -3,8 +3,18 @@ debug_screenshots/
 
 
 .idea/workspace.xml
+.venv
+.idea/
+**/__pycache__/
 
 automation.log
+**/.log
+**/.pyc
+
+dist/
+build/
+*.pyc
+.idea/
 
 
 fk it ocd on builder kinda seems impossible lol

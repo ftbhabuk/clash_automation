@@ -1,9 +1,9 @@
 import time
 import random
 import logging
-import colorama
-from colorama import Fore, Style
-import keyboard
+import colorama # type: ignore
+from colorama import Fore, Style # type: ignore
+import keyboard # type: ignore
 from src.attack import Attacker  # Attack module
 from src.resource_collector import ResourceCollector  # Resource collection module
 from src.troop_trainer import TroopTrainer  # Troop training module
@@ -66,7 +66,7 @@ def main():
 
         # Define troops configuration
         troops_to_train = [
-            ('goblin', 70),
+            ('goblin', 50),
             # ('barbarian', 10),  # Will use key '1'
             # ('archer', 35),     # Will use key '2'
             # ('giant', 5),      # Will use key '3'
