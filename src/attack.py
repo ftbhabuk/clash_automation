@@ -75,8 +75,8 @@ class BoundaryDetector:
 
 
 class Attacker:
-    def __init__(self, gold_threshold=100000, elixir_threshold=100000,
-                 dark_elixir_threshold=1000, debug_dir="debug_screenshots", troops_to_train=None):
+    def __init__(self, gold_threshold, elixir_threshold, dark_elixir_threshold,
+                 debug_dir="debug_screenshots", troops_to_train=None):
         self.gold_threshold = gold_threshold
         self.elixir_threshold = elixir_threshold
         self.dark_elixir_threshold = dark_elixir_threshold
@@ -86,6 +86,7 @@ class Attacker:
         if troops_to_train:
             self.set_troops(troops_to_train)
         os.makedirs(self.debug_dir, exist_ok=True)
+
 
     def _click_attack_button(self):
         logging.info("Clicking 'Attack' button...")

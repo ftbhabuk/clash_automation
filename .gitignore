@@ -7,7 +7,7 @@ debug_screenshots/
 .idea/
 **/__pycache__/
 
-automation.log
+
 **/.log
 **/.pyc
 

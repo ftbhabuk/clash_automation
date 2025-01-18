@@ -61,21 +61,17 @@ def main():
     setup_logging()
 
     try:
-        collector = ResourceCollector()
-        trainer = TroopTrainer()
-
-        # Define troops configuration
-        troops_to_train = [
-            ('goblin', 50),
-            # ('barbarian', 10),  # Will use key '1'
-            # ('archer', 35),     # Will use key '2'
-            # ('giant', 5),      # Will use key '3'
-        ]
-
         gold_threshold = 20
         elixir_threshold = 20
         dark_elixir_threshold = 0
-        # Pass troops_to_train during initialization
+
+        collector = ResourceCollector()
+        trainer = TroopTrainer()
+
+        troops_to_train = [
+            ('goblin', 50),
+        ]
+
         attacker = Attacker(
             gold_threshold=gold_threshold,
             elixir_threshold=elixir_threshold,
