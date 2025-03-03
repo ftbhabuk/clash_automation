@@ -1,21 +1,20 @@
-debug_screenshots/
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
 
+# Ignore log files
+*.log
 
+# Ignore virtual environments
+.venv/
 
-.idea/workspace.xml
-.venv
+# Ignore IDE-specific files
 .idea/
-**/__pycache__/
 
+# Ignore debug screenshots and game images
+debug_screenshots/
+game_images/
 
-**/.log
-**/.pyc
-
+# Ignore build and dist folders
 dist/
 build/
-*.pyc
-.idea/
-
-
-fk it ocd on builder kinda seems impossible lol
-lets make it hard corded with pic lol
